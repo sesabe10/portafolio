@@ -1,3 +1,62 @@
-:host {
-  display: block;
+h1, p{
+  color: white;
+  font-family: "Roboto", Arial;  
+}  
+
+h1{
+  line-height: 1.5;
+  margin: 1em 0 0 1em;
+}
+
+p{
+  margin: 1em 0 0 2em;
+}
+
+a{
+  text-decoration: none;
+  font-family: "Roboto", Arial;
+  color: white;
+}
+
+svg{
+  color: white;
+  cursor: pointer;
+}
+
+.circle{
+  display: flex;
+  align-items: center;
+}
+
+.dot{
+  background-color: rgb(3, 209, 48);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.circle > p{
+  margin: 2em 0 0 1em;
+}
+
+.dot{
+  margin: 2em 0 0 2em;
+}
+
+.button{
+  width: 140px;
+  height: 30px;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orange;
+  border-radius: 1em;
+  margin: 2em 0 0 2em;
+  transition: background-color .5s ease;
+}
+
+.button:hover{
+  background-color: transparent;
+  border:  1px solid gray;
 }

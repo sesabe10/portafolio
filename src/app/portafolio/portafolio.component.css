@@ -23,15 +23,7 @@
   grid-column: span 8 / span 8;
   grid-column-start: 1;
   grid-row-start: 4;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   border-radius: 10px;
-}
-
-.div6 img{
-  width: 100px;
-  height: 100px;
 }
 
 .div7 {
