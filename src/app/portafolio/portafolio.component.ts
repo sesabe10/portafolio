@@ -8,7 +8,13 @@ import { SkillsComponent } from '../components/skills/skills.component';
 @Component({
   selector: 'app-portafolio',
   standalone: true,
-  imports: [CommonModule, NavComponent, ProjectsComponent, CvComponent, SkillsComponent],
+  imports: [
+    CommonModule, 
+    NavComponent, 
+    ProjectsComponent, 
+    CvComponent, 
+    SkillsComponent,
+  ],
   templateUrl: './portafolio.component.html',
   styleUrls: ['./portafolio.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,

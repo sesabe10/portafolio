@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
@@ -9,8 +9,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./skills.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SkillsComponent { 
-  constructor() {}
+export class SkillsComponent {
+  constructor() { }
 
   images = [
     {
@@ -30,8 +30,8 @@ export class SkillsComponent {
       title: 'CSS'
     },
     {
-      route: "assets/css.png",
-      title: 'CSS'
+      route: "assets/java.png",
+      title: 'Java'
     }
-  ]  
+  ]
 }

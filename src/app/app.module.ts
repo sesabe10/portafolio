@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PortafolioComponent } from './portafolio/portafolio.component';
 import { NavComponent } from './components/nav/nav.component';
+import { ContacComponent } from './contac/contac/contac.component';
+import { provideRouter, withViewTransitions } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -15,9 +18,13 @@ import { NavComponent } from './components/nav/nav.component';
     BrowserModule,
     AppRoutingModule,
     PortafolioComponent,
-    NavComponent
+    NavComponent,
+    ContacComponent, 
+    
 ],
-  providers: [],
+  providers: [
+    provideRouter(withViewTransitions),    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
