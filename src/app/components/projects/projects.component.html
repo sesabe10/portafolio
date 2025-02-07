@@ -1,0 +1,9 @@
+<h1>Proyectos</h1>
+<div class="projects">
+    <div class="project" *ngFor="let project of projects">
+        <img [src]="project.img" [alt]="project.description">
+        <a [href]="project.url" target="_blank" rel="noopener noreferrer">
+            {{project.title}}
+        </a>
+    </div>    
+</div>

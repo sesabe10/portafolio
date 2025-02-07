@@ -1,11 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-main',
+  selector: 'app-nav',
   standalone: true,
   imports: [],
-  template: `<p>main works!</p>`,
-  styleUrls: ['./main.component.css'],
+  templateUrl: './nav.component.html',
+  styleUrls: ['./nav.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MainComponent { }
+export class NavComponent { }
