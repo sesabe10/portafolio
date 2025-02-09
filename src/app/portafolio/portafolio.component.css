@@ -4,7 +4,7 @@
   grid-template-rows: repeat(7, 1fr);
   gap: 18px;
   width: 60vw;
-  height: 100vh;
+  height: 100%;
   margin: 1em 0 1em 0;  
 }
   
@@ -68,6 +68,12 @@
   color: white;
   margin-top: 1em;
 }
+.social svg:hover{
+  color: #0A66C2;
+  
+}
+
+
 
 .div8 {
   background-color: #121214;

@@ -30,8 +30,12 @@ export class SkillsComponent {
       title: 'CSS'
     },
     {
-      route: "assets/java.png",
+      route: "assets/spring.svg",
       title: 'Java'
+    },
+    {
+      route: "assets/laravel.svg",
+      title: 'PHP'
     }
   ]
 }

@@ -6,7 +6,11 @@ import { AppComponent } from './app.component';
 import { PortafolioComponent } from './portafolio/portafolio.component';
 import { NavComponent } from './components/nav/nav.component';
 import { ContacComponent } from './contac/contac/contac.component';
-import { provideRouter, withViewTransitions } from '@angular/router';
+
+// /imports
+import {HttpClient} from '@angular/common/http';
+import { ReactiveFormsModule} from '@angular/forms';
+
 
 
 @NgModule({
@@ -19,11 +23,11 @@ import { provideRouter, withViewTransitions } from '@angular/router';
     AppRoutingModule,
     PortafolioComponent,
     NavComponent,
-    ContacComponent, 
-    
+    ContacComponent,     
+    ReactiveFormsModule    
 ],
-  providers: [
-    provideRouter(withViewTransitions),    
+  providers: [  
+    HttpClient
   ],
   bootstrap: [AppComponent]
 })

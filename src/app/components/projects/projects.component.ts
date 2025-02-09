@@ -14,10 +14,10 @@ export class ProjectsComponent {
 
   projects = [
     {
-    title: "Zax FM",
-    img: 'assets/zaxfm.png',
-    url: "https://zaxfm.com",
-    description: "Link externo página web"
+      title: "Zax FM",
+      img: 'assets/zaxfm.png',
+      url: "https://zaxfm.com",
+      description: "Link externo página web"
     },
     {
       title: "WebApp",
@@ -29,6 +29,12 @@ export class ProjectsComponent {
       title: "Conversor de monedas",
       img: 'assets/conversion.png',
       url: "https://github.com/sesabe10/conversionchallenge",
+      description: "Link externo página web"
+    },
+    {
+      title: "App Citas",
+      img: 'assets/citas.png',
+      url: "https://citasangular.netlify.app/",
       description: "Link externo página web"
     }
   ]  
