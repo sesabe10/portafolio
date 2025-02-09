@@ -113,3 +113,17 @@ margin: 4em 0 0 4em;
 display: flex;
 gap: 1em;
 }
+
+.alert{
+  width: 260px;
+  height: 50px;
+  background-color: orange;
+  margin: 1em 0 0 4em;  
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.alert > p{
+  color: #FFF;
+}

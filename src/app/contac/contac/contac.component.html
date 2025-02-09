@@ -23,13 +23,16 @@
             <form id="form-contac" [formGroup]="userForm" (ngSubmit)="save()">                
                 <div class="inputs">
                     <input required type="text" placeholder="Nombre" formControlName="name">                    
-                    <input type="email" placeholder="Correo" formControlName="email">                    
+                    <input required type="email" placeholder="Correo" formControlName="email">                    
                 </div>
                 <div class="message">
-                    <textarea formControlName="message" name="comment" id="area" cols="30" rows="10"></textarea>
-                </div>    
-                <button type="submit">ENVIAR</button>                  
+                    <textarea required formControlName="message" name="message" id="area" cols="30" rows="10"></textarea>
+                </div>      
+                <button [disabled]="userForm.invalid" type="submit">ENVIAR</button>                  
             </form>
+            <div *ngIf="userForm.controls['email'].invalid && userForm.controls['email'].touched" class="alert">
+                <p>Todos los campos son obligatorios</p>
+            </div>
         </div>
     </div>
 </div>
