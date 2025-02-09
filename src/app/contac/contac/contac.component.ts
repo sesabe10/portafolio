@@ -26,10 +26,10 @@ export class ContacComponent {
   });
 
    save(){
-      console.log(this.userForm.value);
-      this.emailService.sendEmail(this.userForm.value as DatosContacto).subscribe((response: any) =>{
-        console.log(response);
+      
+      this.emailService.sendEmail(this.userForm.value as DatosContacto).subscribe((response: any) =>{        
         this.userForm.reset();
+        alert("Mensaje enviado");
       })
     
   }

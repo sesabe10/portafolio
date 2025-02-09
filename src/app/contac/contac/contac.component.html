@@ -29,10 +29,7 @@
                     <textarea required formControlName="message" name="message" id="area" cols="30" rows="10"></textarea>
                 </div>      
                 <button [disabled]="userForm.invalid" type="submit">ENVIAR</button>                  
-            </form>
-            <div *ngIf="userForm.controls['email'].invalid && userForm.controls['email'].touched" class="alert">
-                <p>Todos los campos son obligatorios</p>
-            </div>
+            </form>                   
         </div>
     </div>
 </div>
