@@ -1,37 +1,33 @@
 .parent {  
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(7, 1fr);
+  display: grid; 
+  grid-template-columns: repeat(1fr, 4);
+  grid-template-rows: repeat(1fr, 4);
+  grid-template-areas: 
+  "presentation presentation cv cv"
+  "presentation presentation cv cv"
+  "skills skills skills skills"
+  "demos demos demos demos";    
   gap: 18px;
-  width: 60vw;
+  width: 50vw;
   height: 100vh;
   margin: 1em 0 1em 0;  
 }
   
 .div5 {
   background-color: #121214;
-  grid-column: span 5 / span 5;
-  grid-row: span 3 / span 3;
-  grid-column-start: 4;
-  grid-row-start: 1;
+  grid-area: cv;  
   border-radius: 10px;
-
 }
 
 .div6 {
   background-color: #121214;
-  grid-column: span 8 / span 8;
-  grid-column-start: 1;
-  grid-row-start: 4;
+  grid-area: skills;
   border-radius: 10px;
 }
 
 .div7 {
-  background-color: #121214;
-  grid-column: span 3 / span 3;
-  grid-row: span 3 / span 3;
-  grid-column-start: 1;
-  grid-row-start: 1;
+  background-color: #121214;  
+  grid-area: presentation;
   border-radius: 10px;
 }
 
@@ -50,6 +46,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.div8 {
+  background-color: #121214;
+  grid-area: demos;
+  border-radius: 10px;
 }
 
 .profile img{
@@ -73,13 +75,15 @@
   
 }
 
-
-
-.div8 {
-  background-color: #121214;
-  grid-column: span 8;
-  grid-row: span 3 / span 3;
-  grid-row-start: 5;
-  border-radius: 10px;
-
+@media (max-width: 480px) { 
+  .parent {   
+    width: 80vw;       
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(auto,4);
+    grid-template-areas: 
+    "presentation"
+    "cv"
+    "skills"
+    "demos";
+  }
 }

@@ -3,9 +3,14 @@
     padding: 0;    
 }
 
+html{
+    height: 100%;
+}
+
 body{    
-    display: flex;
+    display: flex;   
     justify-content: center;    
+    min-height: 100vh;    
     background: -webkit-linear-gradient(0deg, #080b1b,#020303);/* Chrome 10-25, Safari 5.1-6 */                          
     background: linear-gradient(0deg, #080b1b,#020303);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
 }
