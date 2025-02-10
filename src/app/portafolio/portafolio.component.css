@@ -70,9 +70,17 @@
   color: white;
   margin-top: 1em;
 }
-.social svg:hover{
-  color: #0A66C2;
-  
+
+.social svg:first-child{
+  margin-right: 1em;
+}
+
+.social svg.bi-linkedin:hover{
+  color: #0A66C2;  
+}
+
+.social svg.bi-github:hover{
+  color: #bdcad8;  
 }
 
 @media (max-width: 480px) { 
