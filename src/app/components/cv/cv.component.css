@@ -1,6 +1,7 @@
 h1, p{
   color: white;
-  font-family: "Roboto", Arial;  
+  font-family: "Roboto", Arial; 
+  font-size: clamp(1rem, 3rem); 
 }  
 
 h1{
@@ -59,4 +60,23 @@ svg{
 .button:hover{
   background-color: transparent;
   border:  1px solid gray;
+}
+
+@media (max-width: 480px) { 
+  h1, p{
+    text-align: center;
+  }
+
+  .dot{
+    display: none;
+  }
+
+  .button{
+    margin: 1em auto;
+    width: 100px;
+    height: 20px;    
+  }
+  svg{
+    display: none;
+  }
 }

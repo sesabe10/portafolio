@@ -10,3 +10,13 @@ img{
   align-items: center;  
 }
 
+@media (max-width: 480px) { 
+  .skill_container {   
+    flex-direction: column;
+  }
+
+  img{
+    width: 30px;  
+    height: 30px;  
+  }
+}

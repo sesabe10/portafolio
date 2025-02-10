@@ -35,3 +35,10 @@ a{
   padding-left: .5em;
   font-family: "Roboto", Arial;  
 }
+
+@media (max-width: 480px) { 
+  .projects {   
+    flex-direction: column;
+    margin-bottom: 1em;
+  }  
+}
