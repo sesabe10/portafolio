@@ -6,10 +6,9 @@
   "presentation presentation cv cv"
   "presentation presentation cv cv"
   "skills skills skills skills"
-  "demos demos demos demos"  
-  "demos demos demos demos";  
+  "demos demos demos demos";    
   gap: 18px;
-  width: 60vw;
+  width: 50vw;
   height: 100vh;
   margin: 1em 0 1em 0;  
 }
@@ -53,7 +52,6 @@
   background-color: #121214;
   grid-area: demos;
   border-radius: 10px;
-
 }
 
 .profile img{
@@ -78,7 +76,8 @@
 }
 
 @media (max-width: 480px) { 
-  .parent {          
+  .parent {   
+    width: 80vw;       
     grid-template-columns: 100%;
     grid-template-rows: repeat(auto,4);
     grid-template-areas: 

@@ -10,6 +10,7 @@ import { ContacComponent } from './contac/contac/contac.component';
 // /imports
 import {HttpClient} from '@angular/common/http';
 import { ReactiveFormsModule} from '@angular/forms';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 
 
@@ -24,7 +25,8 @@ import { ReactiveFormsModule} from '@angular/forms';
     PortafolioComponent,
     NavComponent,
     ContacComponent,     
-    ReactiveFormsModule    
+    ReactiveFormsModule,
+    BrowserAnimationsModule        
 ],
   providers: [  
     HttpClient

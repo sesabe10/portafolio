@@ -40,5 +40,9 @@ a{
   .projects {   
     flex-direction: column;
     margin-bottom: 1em;
-  }  
+  }
+
+  .div5{
+    width: 100%;
+  }
 }
