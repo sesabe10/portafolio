@@ -36,6 +36,12 @@ export class ProjectsComponent {
       img: 'assets/citas.png',
       url: "https://citasangular.netlify.app/",
       description: "Link externo página web"
+    },
+    {
+      title: "WeatherApp",
+      img: 'assets/wetaherApp.png',
+      url: "https://angularweatherssb.netlify.app/",
+      description: "Link externo página web"
     }
   ]  
 }

@@ -83,6 +83,19 @@
   color: #bdcad8;  
 }
 
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .parent {   
+    width: 80vw;       
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(auto,4);
+    grid-template-areas: 
+    "presentation"
+    "cv"
+    "skills"
+    "demos";
+  }
+}
+
 @media (max-width: 480px) { 
   .parent {   
     width: 80vw;       
